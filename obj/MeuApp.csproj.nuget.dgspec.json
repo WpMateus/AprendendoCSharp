@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mateus.wenzler\\Desktop\\MeuApp\\MeuApp.csproj": {}
+    "C:\\Users\\mateu\\Downloads\\AprendendoCSharp\\MeuApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mateus.wenzler\\Desktop\\MeuApp\\MeuApp.csproj": {
+    "C:\\Users\\mateu\\Downloads\\AprendendoCSharp\\MeuApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mateus.wenzler\\Desktop\\MeuApp\\MeuApp.csproj",
+        "projectUniqueName": "C:\\Users\\mateu\\Downloads\\AprendendoCSharp\\MeuApp.csproj",
         "projectName": "MeuApp",
-        "projectPath": "C:\\Users\\mateus.wenzler\\Desktop\\MeuApp\\MeuApp.csproj",
-        "packagesPath": "C:\\Users\\mateus.wenzler\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mateus.wenzler\\Desktop\\MeuApp\\obj\\",
+        "projectPath": "C:\\Users\\mateu\\Downloads\\AprendendoCSharp\\MeuApp.csproj",
+        "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mateu\\Downloads\\AprendendoCSharp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mateus.wenzler\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

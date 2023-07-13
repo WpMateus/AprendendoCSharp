@@ -1,5 +1,9 @@
-﻿
+﻿using System;
 
+namespace MeuApp{
+  class Program{
+    static void Main(string[] args){
+      
 var texto = "Testando";
 Console.WriteLine(texto);
 
@@ -101,3 +105,105 @@ do{
   Console.WriteLine(valorZero);
   valorZero++;
 }while(valorZero <= 5);
+ 
+
+  MeuMetodo();
+  string nome = RetornaNome("Mateus", "Wenzler");
+  Console.WriteLine(nome);
+
+
+// Tipos de valor, você cria uma cópia do item na memória.
+  int x1 = 25;
+  int y1 = x1;
+
+  Console.WriteLine(x1);
+  Console.WriteLine(y1);
+
+  x1 = 32;
+  Console.WriteLine(x1);
+  Console.WriteLine(y1);
+
+
+//tipo de valor com array, aqui só tem a referencia da onde está a informação na memória, assim alterando quando solicitado. Tudo que faz em um, replica no outro
+
+  var arr = new string[2];
+  arr[0] = "Item 1";
+
+  var arr2 = arr;
+
+  Console.WriteLine(arr[0]);
+  Console.WriteLine(arr2[0]);
+
+  arr[0] = "Item 2";
+  Console.WriteLine(arr[0]);
+  Console.WriteLine(arr2[0]);
+
+//instaciar o método contrutor, se criar sem nenhum parametro ele não vai passar pelo método abaixo e não vai atribuir valores
+//Se não informar parametros vem 0, vaziu e 0
+// Se colocar valor, vai sair os valores abaixo informado
+  Product mouse = new Product(1, "Mouse Gamer", 299.97, EProductType.Product);
+
+var manutencaoEletrica = new Product(2, "Manutenção elétrica residencial", 500, EProductType.Service);
+
+//se quiser iniciar vaziu e depois passar as propriedades pode
+//Ex: mouse.Id = 55;
+
+  Console.WriteLine(mouse.Id);
+  Console.WriteLine(mouse.Name);
+  Console.WriteLine(mouse.Price);
+  Console.WriteLine((int)mouse.Type);
+
+      }
+
+//Método só da pra ser feito fora da Main, porém para que ele funcione tem que chamar ele dentro da Main
+     static void MeuMetodo(){
+   Console.WriteLine("C# é legal");
+ }
+
+
+static string RetornaNome(
+  string nome, 
+  string sobrenome,
+  int idade = 20,
+// parametro opcional tem que ir por último
+  bool teste = false,
+  double novo = 35.9
+  )
+{  
+
+return nome +" "+ sobrenome + " tem " + idade.ToString();
+
+}
+
+  }
+
+// struct tem que estar fora da class, pois competem com ela
+  struct Product
+
+  {
+
+//pode ter um método com o mesmo nome do struct, método contrutor
+    public Product(int id, string name, double price, EProductType type){
+      Id = id;
+      Name = name;
+      Price = price;
+      Type = type;
+    }
+    public int Id;
+    public string Name;
+    public double Price;
+    public EProductType Type;
+
+    public double PriceInDolar(double dolar){
+      return Price * dolar;
+    }
+  }
+
+enum EProductType 
+{
+  Product = 1,
+  Service = 2
+}
+
+}
+
